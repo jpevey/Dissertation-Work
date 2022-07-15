@@ -1,0 +1,69 @@
+=tsunami-3d-k5
+Cuboid With Cyl of Fuel
+' cross section library
+ce_v7.1
+' begin reading materials
+read composition
+%material_0%
+%material_1%
+%material_2%
+%material_3%
+%material_4%
+%material_5%
+%material_6%
+%material_7%
+%material_8%
+%material_9%
+%material_10%
+%material_11%
+%material_12%
+%material_13%
+%material_14%
+%material_15%
+%material_16%
+%material_17%
+%material_18%
+%material_19%
+end composition
+read param
+ cet=1
+ cfp=5
+ cgd=yes
+ npg=25000
+ gen=10000
+ nsk=105
+ msh=1
+ tme=180
+end param
+read geometry
+ unit 1
+cylinder 1 1 10.83396326 2.54 0.0
+cylinder 2 1 15.32153778 2.54 0.0
+cylinder 3 1 18.76497482 2.54 0.0
+cylinder 4 1 21.66792653 2.54 0.0
+cylinder 5 1 24.22547832 2.54 0.0
+cylinder 6 1 26.53768189 2.54 0.0
+cylinder 7 1 28.66397251 2.54 0.0
+cylinder 8 1 30.64307556 2.54 0.0
+cylinder 9 1 32.50188979 2.54 0.0
+cylinder 10 1 34.26 2.54 0.0
+cylinder 11 1 35.93219114 2.54 0.0
+cylinder 12 1 37.52994964 2.54 0.0
+cylinder 13 1 39.06241006 2.54 0.0
+cylinder 14 1 40.53697867 2.54 0.0
+cylinder 15 1 41.95975929 2.54 0.0
+cylinder 16 1 43.33585305 2.54 0.0
+cylinder 17 1 44.66957488 2.54 0.0
+cylinder 18 1 45.96461335 2.54 0.0
+cylinder 19 1 47.22415102 2.54 0.0
+cylinder 20 1 48.45095665 2.54 0.0
+ global unit 2         
+  cuboid 0 2 48.45095665 -48.45095665 48.45095665 -48.45095665 2.54 0  
+hole 1 0 0 0
+end geometry
+read boundary 
+XYF=void 
+ZFC=reflect
+end boundary
+end data
+end
